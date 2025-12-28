@@ -8,7 +8,7 @@ function login(){
   }
   else if(u === "staff" && p === "1234"){
     localStorage.setItem("role","staff");
-    location.href = "dashbard.html";
+    location.href = "index.html";
   }
   else{
     alert("Invalid login");

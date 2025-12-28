@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Hotel Dashboard</title>
+  <link rel="stylesheet" href="dashbard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="log.js"></script>
+<script>
+  protectPage(["admin","staff"]);
+</script>
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2>🏨 Smart Hotel</h2>
+    <ul>
+      <li class="active"> <a href="index.html"> <i class="fas fa-home"></i>  Dashboard </a></li>
+      <li> <a href="guset.html"><i class="fas fa-bed"></i> Room Control </a></li> 
+      <li> <a href="energy.html"><i class="fas fa-bolt"></i> Energy Management </a></li> 
+      <li> <a href="reports.html"> <i class="fas fa-file-alt"></i> Reports </a></li>
+      <li> <a href="mainte.html"><i class="fas fa-tools"></i> Maintenance </a></li> 
+      <li> <a href="stting.html"><i class="fas fa-cog"></i> Settings </a></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+      <h1>SMART HOTEL DASHBOARD</h1>
+      <div class="admin">
+        <i class="fas fa-bell"></i>
+        <span class="badge">3</span>
+        <img src="image.png">
+        <span>Admin</span>
+      </div>
+    </header>
+
+    <!-- STAT CARDS -->
+    <section class="cards">
+      <div class="card green">
+        <h3>Occupied Rooms</h3>
+        <p class="number">32</p>
+        <span>Out of 50</span>
+      </div>
+
+      <div class="card blue">
+        <h3>Vacant Rooms</h3>
+        <p class="number">18</p>
+        <span>Available</span>
+      </div>
+
+      <div class="card orange">
+        <h3>Active Devices</h3>
+        <p class="number">56</p>
+        <span>Online</span>
+      </div>
+
+      <div class="card red">
+        <h3>Alerts</h3>
+        <p class="number">3</p>
+        <span>Active Alerts</span>
+      </div>
+    </section>
+
+    <!-- CONTENT GRID -->
+    <section class="grid">
+
+      <!-- ROOM STATUS -->
+      <div class="box">
+        <h3>Room Status</h3>
+
+        <div class="room">
+          <select>
+            <option>Room 203</option>
+          </select>
+
+          <ul class="room-status">
+            <li><i class="fas fa-lightbulb"></i> Lights ON</li>
+            <li><i class="fas fa-snowflake"></i> AC 22°C</li>
+            <li><i class="fas fa-tv"></i> TV ON</li>
+            <li class="danger"><i class="fas fa-ban"></i> Do Not Disturb</li>
+          </ul>
+
+          <button>Control Room</button>
+        </div>
+      </div>
+
+      <!-- ENERGY -->
+      <div class="box">
+        <h3>Energy Usage</h3>
+        <canvas id="energyChart"></canvas>
+        <p class="kwh">Monthly Usage: <b>420 kWh</b></p>
+      </div>
+
+      <!-- ALERTS -->
+      <div class="box">
+        <h3>Active Alerts</h3>
+        <ul class="alerts">
+          <li>🔴 Sensor Malfunction - Room 105</li>
+          <li>🔴 Low Battery - Room 307</li>
+          <li>🔴 AC Fault - Room 412</li>
+        </ul>
+      </div>
+
+    </section>
+
+  </main>
+</div>
+
+<script src="dashbard.js"></script>
+</body>
+</html>

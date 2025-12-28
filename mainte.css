@@ -15,12 +15,16 @@ body{background:#eef1f6}
 .logo{font-weight:700;margin-bottom:30px}
 
 nav a{
-  display:flex;
   align-items:center;
   gap:12px;
   padding:12px;
   border-radius:8px;
-  cursor:pointer
+  cursor:pointer;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  
 }
 nav a.active, nav a:hover{
   background:rgba(255,255,255,.15)
