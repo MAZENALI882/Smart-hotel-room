@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>System Settings | Smart Hotel</title>
+<link rel="stylesheet" href="stting.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="settings-container">
+
+  <!-- Header -->
+  <div class="page-header">
+    <h1>System Settings</h1>
+    <button class="nour" onclick="document.location='dashbard.html'"> Back To Dashboard</button>
+    <button class="save-btn">Save Changes</button>
+  </div>
+
+  <!-- General Settings -->
+  <div class="card">
+    <h2>General Settings</h2>
+
+    <div class="form-group">
+      <label>Hotel Name</label>
+      <select>
+        <option>Smart Hotel</option>
+      </select>
+    </div>
+
+    <div class="two-columns">
+      <div class="form-group">
+        <label>Language</label>
+        <select>
+          <option>English</option>
+          <option>Arabic</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Theme</label>
+        <select>
+          <option>Light</option>
+          <option>Dark</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Energy + Security -->
+  <div class="two-cards">
+
+    <!-- Energy Management -->
+    <div class="card">
+      <h2>Energy Management</h2>
+
+      <label class="check-row">
+        <input type="checkbox" checked>
+        Auto Power Saving
+      </label>
+
+      <div class="form-group">
+        <label>Default Temperature (°C)</label>
+        <select>
+          <option>22</option>
+          <option>24</option>
+          <option>26</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Security Settings -->
+    <div class="card">
+      <h2>Security Settings</h2>
+
+      <label class="check-row">
+        <input type="checkbox" checked>
+        Enable Alerts
+      </label>
+
+      <label class="check-row">
+        <input type="checkbox">
+        Auto Lock Doors
+      </label>
+    </div>
+
+  </div>
+
+  <!-- Bottom Security (Duplicate Section as Image) -->
+  <div class="card">
+    <h2>Security Settings</h2>
+
+    <div class="two-columns">
+      <label class="check-row">
+        <input type="checkbox" checked>
+        Enable Alerts
+      </label>
+
+      <label class="check-row">
+        <input type="checkbox">
+        Auto Lock Doors
+      </label>
+    </div>
+  </div>
+
+
+</div>
+
+<script src="settings.js"></script>
+</body>
+</html>

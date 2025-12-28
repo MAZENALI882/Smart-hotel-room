@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #e9eef5, #f5f7fb);
+  padding: 0;
+  margin: 0;
+}
+
+.settings-container {
+  max-width: 1150px;
+  margin: 20px;
+;
+  
+}
+
+/* Header */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.page-header h1 {
+  color: #2c3e50;
+}
+.nour{
+   background: linear-gradient(90deg, #2f6db5, #1f4f8b);
+  color: white;
+  border: none;
+  padding: 10px 100px;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
+.save-btn {
+  background: linear-gradient(90deg, #2f6db5, #1f4f8b);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Card */
+.card {
+  background: #ffff;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #dcdfe6;
+}
+
+/* Layout */
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.two-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+/* Checkbox */
+.check-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.check-row input {
+  width: 18px;
+  height: 18px;
+  accent-color: #2f6db5;
+}

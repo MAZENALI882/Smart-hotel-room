@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Reports | Smart Hotel</title>
+<link rel="stylesheet" href="reports.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>SMART HOTEL</h2>
+    <ul>
+      <li> <a href="dashbard.html"><i class="fas fa-home"></i>  Dashboard </a></li>
+      <li> <a href="guset.html"><i class="fas fa-bed"></i> Room Control </a></li>
+      <li> <a href="energy.html"><i class="fas fa-bolt"></i> Energy Management </a></li>
+      <li class="active"> <a href="reports.html"><i class="fas fa-file-alt"></i> Reports</a></li>
+      <li> <a href="stting.html"><i class="fas fa-cog"></i> Settings </a></li>
+    </ul>
+  </aside>
+
+  <!-- Main -->
+  <div class="main">
+
+    <!-- Topbar -->
+    <header class="topbar">
+      <span class="title">SMART HOTEL DASHBOARD</span>
+      <div class="user">
+        <img src="image.png">
+        <span>Admin</span>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <section class="content">
+      <h1>Reports</h1>
+
+      <!-- Generate Report -->
+      <div class="card">
+        <h3>Generate Report</h3>
+
+        <div class="form-row">
+          <label>Report Type:</label>
+          <select>
+            <option>Energy Consumption</option>
+            <option>Room Usage</option>
+            <option>Maintenance</option>
+          </select>
+        </div>
+
+        <div class="date-row">
+          <button class="btn-generate">Generate Report</button>
+
+          <div class="date-box">
+            <label>From</label>
+            <input type="date" value="2024-01-01">
+          </div>
+
+          <div class="date-box">
+            <label>To</label>
+            <input type="date" value="2024-01-31">
+          </div>
+        </div>
+      </div>
+
+      <!-- Export Options -->
+      <div class="card">
+        <h3>Export Options</h3>
+
+        <div class="export-buttons">
+          <button class="btn-pdf">
+            <i class="fas fa-file-pdf"></i> Download PDF
+          </button>
+          <button class="btn-excel">
+            <i class="fas fa-file-excel"></i> Download Excel
+          </button>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</div>
+
+<script src="reports.js"></script>
+</body>
+</html>
+

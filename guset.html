@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Room Control</title>
+
+<link rel="stylesheet" href="guset.css">
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <script src="log.js"></script>
+<script>
+  protectPage(["admin","staff"]);
+</script>
+
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2>🏨 Smart Hotel</h2>
+    <ul>
+      <li > <a href="dashbard.html"><i class="fas fa-home" ></i> Dashboard </a></li> 
+      <li class="active"> <a href="guset.html"><i class="fas fa-bed"></i> Room Control </a></li>
+      <li> <a href="energy.html"><i class="fas fa-bolt"></i> Energy Management </a></li>
+      <li><a href="reports.html">  <i class="fas fa-file-alt"></i>Reports </a></li>
+      <li> <a href="mainte.html"></a><i class="fas fa-tools"></i>   Maintenance  </a></li>
+      <li> <a href="stting.html"> <i class="fas fa-cog"></i> Settings </a></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    
+    <!-- Topbar -->
+    <header class="topbar">
+      <span class="title">SMART HOTEL DASHBOARD</span>
+      <div class="user">
+        <img src="image.png">
+        <span>Admin</span>
+      </div>
+    </header>
+
+    <!-- TOP -->
+    <header class="top">
+      <h1>Room 203</h1>
+      <span class="status">✔ Occupied - John Doe</span>
+    </header>
+
+    <!-- GRID -->
+    <section class="grid">
+
+      <!-- LIGHTS -->
+      <div class="card">
+        <h3>Lights Control</h3>
+        <div class="row">
+          <i class="fas fa-lightbulb"></i>
+          <input type="range" id="lightRange" value="8">
+          <span id="lightValue">8%</span>
+        </div>
+        <button id="lightBtn" class="on">ON</button>
+      </div>
+
+      <!-- CLIMATE -->
+      <div class="card">
+        <h3>Climate Control</h3>
+        <select id="modeSelect">
+          <option>Cooling Mode</option>
+        </select>
+        <div class="temp">
+          <button id="tempMinus">-</button>
+          <span id="tempValue">22°C</span>
+          <button id="tempPlus">+</button>
+        </div>
+        <button id="fanBtn" class="on">Fan: Auto</button>
+      </div>
+
+      <!-- ROOM IMAGE -->
+      <div class="card image">
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+        <div class="overlay">
+          <span>🌡 22°C</span>
+          <span>💧 45%</span>
+        </div>
+      </div>
+
+      <!-- CURTAINS -->
+      <div class="card">
+        <h3>Curtains</h3>
+        <div class="btn-group">
+          <button id="curtainOpen">OPEN</button>
+          <button id="curtainClose" class="on">CLOSE</button>
+          <button id="curtainStop">STOP</button>
+        </div>
+      </div>
+
+      <!-- TV & DND -->
+      <div class="card danger">
+        <h3>TV & Do Not Disturb</h3>
+        <button>STOP</button>
+        <button id="dndBtn" class="danger-btn">Do Not Disturb</button>
+      </div>
+
+      <!-- TV -->
+      <div class="card">
+        <h3>TV</h3>
+        <div class="btn-group">
+          <button id="tvOn" class="on">ON</button>
+          <button id="tvOff">OFF</button>
+        </div>
+        <p id="tvStatus">TV is ON</p>
+      </div>
+
+      <!-- ENERGY -->
+      <div class="card">
+        <h3>Energy Usage</h3>
+        <p class="big">2.1 kWh</p>
+        <span>Today's Usage</span>
+      </div>
+
+      <!-- SECURITY -->
+      <div class="card">
+        <h3>Security Status</h3>
+        <p class="secure">✔ All Secure</p>
+      </div>
+
+    </sectio>
+
+  </main>
+</div>
+<script src="guset.js"></script>
+</body>
+</html>

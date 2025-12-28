@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart Hotel – Maintenance</title>
+
+<link rel="stylesheet" href="mainte.css">
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <script src="log.js"></script>
+<script>
+  protectPage(["admin","staff"]);
+</script>
+
+</head>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">SMART HOTEL</div>
+
+    <nav>
+      <a  href="dashbard.html"><i class="fa fa-house"></i>Dashboard</a>
+      <a href="guset.html"><i class="fa fa-door-open"></i>Room Control</a>
+      <a href="energy.html"><i class="fa fa-bolt"></i>Energy Management</a>
+      <a href="reports.html"><i class="fa fa-chart-column"></i>Reports</a>
+      <a class="active" href="mainte.html"><i class="fa fa-screwdriver-wrench"></i>Maintenance</a>
+      <a href="stting.html"><i class="fa fa-gear"></i>Settings</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+      <span>SMART HOTEL DASHBOARD</span>
+
+      <div class="user">
+        <span class="notif">2</span>
+         <img src="image.png">
+        <span>Admin</span>
+      </div>
+    </header>
+
+    <!-- PAGE -->
+    <section class="page">
+
+      <h1>ALERTS & MAINTENANCE</h1>
+
+      <!-- ALERT CARD + TABS -->
+      <div class="top-row">
+
+        <div class="alert-summary">
+          <i class="fa fa-triangle-exclamation"></i>
+          <div>
+            <span>Active Alerts</span>
+            <h2>3</h2>
+          </div>
+        </div>
+
+        <div class="tabs">
+          <button class="active">Active Alerts</button>
+          <button>Maintenance Requests</button>
+        </div>
+
+      </div>
+
+      <!-- CONTENT GRID -->
+      <div class="grid">
+
+        <!-- ACTIVE ALERTS -->
+        <div class="card">
+          <h3>ACTIVE ALERTS</h3>
+
+          <div class="alert-item">
+            <i class="fa fa-temperature-half red"></i>
+            <div>
+              <strong>Sensor Malfunction - Room 105</strong>
+              <p>Temperature Sensor Not Responding</p>
+              <small>Alert Since: Apr 13, 2024 10:15 AM</small>
+            </div>
+            <button class="btn red">Check Now</button>
+          </div>
+
+          <div class="alert-item">
+            <i class="fa fa-battery-quarter yellow"></i>
+            <div>
+              <strong>Low Battery - Room 307</strong>
+              <p>Smart Lock Battery Running Low</p>
+              <small>Alert Since: Apr 12, 2024 8:20 PM</small>
+            </div>
+            <button class="btn yellow">Replace Battery</button>
+          </div>
+
+          <div class="alert-item">
+            <i class="fa fa-fan red"></i>
+            <div>
+              <strong>AC Fault - Room 412</strong>
+              <p>Air Conditioning Fault Detected</p>
+              <small>Alert Since: Apr 10, 2024 3:45 PM</small>
+            </div>
+            <button class="btn blue">Send Technician</button>
+          </div>
+
+        </div>
+
+        <!-- MAINTENANCE -->
+        <div class="card">
+          <h3>MAINTENANCE REQUESTS</h3>
+
+          <div class="request">
+            <i class="fa fa-faucet"></i>
+            <div>
+              <strong>Leaky Faucet Repair</strong>
+              <p>Room 218</p>
+            </div>
+            <span class="status progress">In Progress</span>
+          </div>
+
+          <div class="request">
+            <i class="fa fa-tv"></i>
+            <div>
+              <strong>Broken TV Remote</strong>
+              <p>Room 439</p>
+            </div>
+            <span class="status pending">Pending</span>
+          </div>
+        </div>
+
+        <!-- RECENT -->
+        <div class="card full">
+          <h3>RECENT ACTIVITIES</h3>
+
+          <div class="activity">🔋 Smart Lock Battery Replaced — Room 210 <span>Today</span></div>
+          <div class="activity">🌡 Temperature Sensor Repaired — Room 105 <span>Jan 5</span></div>
+          <div class="activity">🚰 Sink Clogged Fixed — Room 414 <span>Jan 4</span></div>
+          <div class="activity">❄ HVAC Filter Replaced — Room 308 <span>Jan 3</span></div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+</div>
+
+<script src="mainte.js"></script>
+</body>
+</html>

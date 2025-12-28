@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Energy Reports | Smart Hotel</title>
+
+<link rel="stylesheet" href="energy.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+  <script src="log.js"></script>
+<script>
+  protectPage(["admin","staff"]);
+</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+     <h2>Smart Hotel</h2>
+    <ul>
+      <li><i class="fas fa-home"></i><a href="dashbard.html"> Dashboard </a></li>
+      <li><i i class="fas fa-bed"></i><a href="guset.html"> Room Control </a></li>
+      <li class="active"><i class="fas fa-bolt"></i><a href="energy.html"> Energy Management </a></li>
+      <li ><i class="fas fa-file-alt"></i> <a href="reports.html">Reports</a></li>
+      <li><i class="fas fa-cog" ></i><a href="stting.html"> Settings </a></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+     <!-- Topbar -->
+    <header class="topbar">
+      <span class="title">SMART HOTEL DASHBOARD</span>
+      <div class="user">
+        <img src="image.png">
+        <span>Admin</span>
+      </div>
+    </header>
+    
+    <h1>Energy Management</h1>
+    <!-- STATS -->
+    <div class="stats">
+      <div class="stat green">420 kWh<span>Monthly Usage</span></div>
+      <div class="stat blue">14.0 kWh<span>Daily Average</span></div>
+      <div class="stat orange">$120 USD<span>Cost This Month</span></div>
+      <div class="stat purple">85%<span>Efficiency Level</span></div>
+    </div>
+    
+    <!-- FILTER -->
+    <div class="filter-bar">
+      <select id="rangeFilter">
+        <option>Daily</option>
+        <option selected>Monthly</option>
+      </select>
+
+      <div class="date-nav">
+        <button id="prevMonth">◀</button>
+        <span id="currentMonth">Apr 2024</span>
+        <button id="nextMonth">▶</button>
+      </div>
+    </div>
+
+    <!-- CHARTS -->
+    <div class="charts">
+      <div class="box">
+        <h3>Daily Energy Consumption</h3>
+        <canvas id="dailyChart"></canvas>
+      </div>
+
+      <div class="box">
+        <h3>Room-wise Energy Usage</h3>
+        <canvas id="roomChart"></canvas>
+      </div>
+
+    </div>
+ <div class="box_full">
+      <h3>Usage Breakdown</h3>
+      <canvas id="usageChart"></canvas>
+    </div>
+  </main>
+</div>
+
+<script src="energy.js"></script>
+</body>
+</html>

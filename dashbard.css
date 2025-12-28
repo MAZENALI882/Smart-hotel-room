@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f2f5f9;
+}
+
+.layout {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #0a2a43, #103d5e);
+  color: #fff;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.sidebar ul li {
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  list-style: none;
+}
+.sidebar ul li a{
+  display: block;
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+}
+
+.sidebar ul li i {
+  margin-right: 10px;
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover {
+  background: #1c5d8a;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+}
+
+/* TOPBAR */
+.topbar {
+  background: linear-gradient(180deg, #0a2a43, #103d5e);
+  color: #fff;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1{
+  font-size: 15px;
+}
+
+.admin {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.admin img {
+  border-radius:50%;
+    max-height: 40px;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+
+.badge {
+  background: red;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.card .number {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.green { background: linear-gradient(135deg, #2ecc71, #27ae60); }
+.blue { background: linear-gradient(135deg, #3498db, #2980b9); }
+.orange { background: linear-gradient(135deg, #f39c12, #e67e22); }
+.red { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1.3fr 2fr 1.2fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.room-status li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.room-status li i {
+  color: #1e6091;
+  margin-right: 8px;
+}
+
+.room-status .danger {
+  color: red;
+}
+
+button {
+  background: #1e6091;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.alerts li {
+  margin: 10px 0;
+}
+
+.kwh {
+  text-align: center;
+  margin-top: 10px;
+}
