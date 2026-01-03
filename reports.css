@@ -3,10 +3,13 @@
   font-family: "Segoe UI", sans-serif;
 }
 
+@media(max-width: 600px){
+
 body {
-  background: linear-gradient(180deg, #e9eef5, #f6f8fb);
+  background-color: lightblue;
   margin: 0;
   padding: 0;
+}
 }
 
 /* Layout */

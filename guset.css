@@ -5,8 +5,11 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
+@media(max-width: 600px){
+
 body {
-  background: #eef2f7;
+  background-color: lightblue;
+}
 }
 
 .layout {

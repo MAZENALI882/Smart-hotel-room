@@ -4,9 +4,11 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', sans-serif;
 }
+@media(max-width: 600px){
 
 body {
-  background: #f2f5f9;
+  background-color: lightblue;
+}
 }
 
 .layout {

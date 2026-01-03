@@ -3,10 +3,11 @@
   font-family: "Segoe UI", sans-serif;
 }
 
+@media(max-width: 600px){
+
 body {
-  margin: 0;
-  background: #eef2f7;
-  overflow-x: hidden;
+  background-color: lightblue;
+}
 }
 
 /* LAYOUT */
